@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2F4859">
+
+
+    <item
+        android:background="#2F4859"
+        android:id="@+id/aboutus"
+        android:icon="@drawable/fui_done_check_mark"
+        android:title="about us"
+        app:showAsAction="never" />
+
+    <item
+        android:background="#2F4859"
+        android:id="@+id/upload"
+        android:icon="@drawable/fui_done_check_mark"
+        android:title="upload book"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/fui_done_check_mark"
+        android:title="Search"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/fui_done_check_mark"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/signout"
+        android:icon="@drawable/fui_done_check_mark"
+        android:title="Sign out"
+        app:showAsAction="never" />
+
+</menu>

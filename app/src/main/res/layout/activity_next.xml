@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Next">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:transitionName="image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/googleSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signout" />
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:background="#2F4859"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:itemTextColor="#FFFFFF"
+        app:itemIconTint="#FFFFFF"
+        android:id="@+id/navigation_view"
+        app:menu="@menu/mymenu"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

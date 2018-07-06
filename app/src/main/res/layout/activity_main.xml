@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bookaholic" />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:background="#FFFFFF"
+            android:id="@+id/XmlEmail"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/email"
+            android:padding="5dp"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:background="#FFFFFF"
+            android:id="@+id/XmlPassword"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/XmlSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/signin" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newuser"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/XmlSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/signup" />
+
+    </LinearLayout>
+
+
+
+    <com.google.android.gms.common.SignInButton
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/GoogleSignIn"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:layout_marginStart="90dp"
+        android:orientation="vertical">
+
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/XmlGoogleSignIn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:button_icon_height="25dp"
+            app:button_icon_width="25dp"
+            app:hide_text_color="#000000"
+            app:hide_text="Google"
+            app:button_icon="@drawable/g2"
+            app:magic_button_size="50dp" />
+
+
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/magic_button_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:button_icon="@drawable/facebook"
+            app:button_icon_height="25dp"
+            app:button_icon_width="25dp"
+            app:expandable_area_color="#0c4eb7"
+            app:hide_text="Facebook"
+            app:icon_button_color="#0c4eb7"
+            app:magic_button_size="50dp" />
+
+        <com.facebook.login.widget.LoginButton
+            android:visibility="gone"
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

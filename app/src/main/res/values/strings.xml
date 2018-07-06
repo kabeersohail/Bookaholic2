@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bookaholic</string>
+    <string name="signout">SignOut</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign in</string>
+    <string name="newuser">New user ?</string>
+    <string name="signup">Sign up</string>
+    <string name="repassword">Confirm password</string>
+    <string name="welcome">WELCOME</string>
+    <string name="name">Name</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="showmap">Show map</string>
+    <string name="locateme">Locate me</string>
+    <string name="need">Need</string>
+    <string name="comission">Commission (optional)</string>
+    <string name="phone">Phone number</string>
+    <string name="submit">Help!</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="emerg">Emergency</string>
+    <string name="getstarted">Get started</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="facebook_app_id">2151574238460757</string>
+    <string name="fb_login_protocol_scheme">fb2151574238460757</string>
+
+</resources>
